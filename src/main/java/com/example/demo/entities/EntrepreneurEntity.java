@@ -15,6 +15,8 @@ import lombok.ToString;
 @ToString
 @Entity
 public class EntrepreneurEntity extends UserEntity {
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 	private String societe;
 }
