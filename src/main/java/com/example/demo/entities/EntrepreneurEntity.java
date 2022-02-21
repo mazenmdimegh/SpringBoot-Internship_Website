@@ -19,4 +19,5 @@ public class EntrepreneurEntity extends UserEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String societe;
+	private String secteur ;
 }

@@ -20,8 +20,8 @@ public class MessagerieEntity {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-@OneToOne
-private UserEntity emetteur ;
-@OneToOne
-private EntrepreneurEntity recepteur; 
+  //  @OneToOne
+  //  private UserEntity emetteur ;
+   // @OneToOne
+    //private EntrepreneurEntity recepteur;
 }
