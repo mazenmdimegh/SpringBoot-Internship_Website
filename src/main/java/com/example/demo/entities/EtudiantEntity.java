@@ -1,24 +1,17 @@
 package com.example.demo.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 @Entity
+@Table(name = "Etudiant")
 public class EtudiantEntity extends UserEntity {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer id ;
 	private String faculte;
 	private Integer promotion;
 	private Integer  pj;

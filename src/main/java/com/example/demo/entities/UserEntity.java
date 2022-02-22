@@ -2,24 +2,17 @@ package com.example.demo.entities;
 
 import java.sql.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@Entity
 
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class UserEntity {
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 	private String nom;
 	private String prenom;

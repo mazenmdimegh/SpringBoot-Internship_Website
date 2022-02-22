@@ -8,6 +8,7 @@ public class OffstageApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OffstageApplication.class, args);
+		System.out.println();
 	}
 
 }
