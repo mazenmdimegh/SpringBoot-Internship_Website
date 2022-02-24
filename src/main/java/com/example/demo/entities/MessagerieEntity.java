@@ -1,27 +1,22 @@
 package com.example.demo.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @Entity
-public class MessagerieEntity {
-	@Id
+public class MessagerieEntity  {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-  //  @OneToOne
-  //  private UserEntity emetteur ;
-   // @OneToOne
-    //private EntrepreneurEntity recepteur;
+    private Long idMessagerie;
+    private Long idEmetteur;
+    private Long idRecepteur;
+
+
 }

@@ -1,5 +1,6 @@
 package com.example.demo.entities;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.*;
@@ -9,11 +10,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class UserEntity {
+public class UserEntity implements Serializable {
 	@Id
-    private Integer id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 	private String nom;
 	private String prenom;
 	private String email;

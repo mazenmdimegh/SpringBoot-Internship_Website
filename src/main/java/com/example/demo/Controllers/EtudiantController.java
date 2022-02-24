@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class EtudiantController {
     @Autowired
     private EtudiantRepository etudiantRepository;
-    @PostMapping("/addEtudiant")
+    /*@PostMapping("/addEtudiant")
     public void saveClient(@RequestBody EtudiantEntity etudiantEntity){
         EtudiantEntity etud = etudiantEntity;
         System.out.println(etud);
         etudiantRepository.save(etudiantEntity);
-    }
+    }*/
 }
