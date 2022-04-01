@@ -24,6 +24,7 @@ public class OffreEntity {
 	private String description;
 	private String duree;
 	private String lieu;
+	private String societe;
 	private String service;
 	private String categorie;
 	private Date date;
