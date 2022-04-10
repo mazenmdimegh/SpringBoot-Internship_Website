@@ -20,12 +20,12 @@ public class OffreEntity {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-	private String titre;
-	private String description;
-	private String duree;
-	private String lieu;
-	private String societe;
-	private String service;
-	private String categorie;
-	private Date date;
+		private String titre;
+		private String description;
+		private String duree;
+		private String lieu;
+		private String societe;
+		private String service;
+		private String categorie;
+		private Date date;
 }
