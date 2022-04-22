@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 
-public class EtudiantController {
+    public class EtudiantController {
     @Autowired
     private EtudiantRepository etudiantRepository;
-    /*@PostMapping("/addEtudiant")
+    @PostMapping("/addEtudiant")
     public void saveClient(@RequestBody EtudiantEntity etudiantEntity){
-        EtudiantEntity etud = etudiantEntity;
-        System.out.println(etud);
-        etudiantRepository.save(etudiantEntity);
-    }*/
-}
+    EtudiantEntity etud = etudiantEntity;
+    System.out.println(etud);
+    etudiantRepository.save(etudiantEntity);
+    }
+    }

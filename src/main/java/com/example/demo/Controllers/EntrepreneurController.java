@@ -8,15 +8,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 
 public class EntrepreneurController {
     @Autowired
     private EntrepreneurRepository entrepreneurRepository;
-    /*@PostMapping("/addEntrepreneur")
+    @PostMapping("/addEntrepreneur")
     public void saveClient(@RequestBody EntrepreneurEntity entrepreneurEntity){
-         entrepreneurRepository.save(entrepreneurEntity);
-         EntrepreneurEntity entrepreneur = new EntrepreneurEntity();
+        EntrepreneurEntity entrepreneur =  entrepreneurEntity;
+        entrepreneurRepository.save(entrepreneurEntity);
 
-    }*/
+
+    }
 }

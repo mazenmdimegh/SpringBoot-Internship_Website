@@ -13,6 +13,6 @@ import lombok.NoArgsConstructor;
 @Table(name = "Entrepreneur")
 
 public class EntrepreneurEntity extends UserEntity {
+	private String adress ;
 	private String societe;
-	private String secteur ;
 }
