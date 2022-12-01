@@ -1,0 +1,40 @@
+pipeline 
+{
+    agent any
+
+    stages
+    {
+        
+        stage('Email'){
+            steps
+            {
+                mail  body: 'succes deployment ! ',  subject: 'Informations email pipeline jenkins', to: 'khouloudbh07@gmail.com'
+            }
+        }
+        
+        
+        stage('Build') 
+        {
+            steps 
+            {
+                echo 'Build App'
+            }
+        }
+        stage('Test') 
+        {
+            steps 
+            {
+                echo 'Test App'
+            }
+        }
+        stage('Deploy') 
+        {
+            steps 
+            {
+                echo 'Deploy App'
+            }
+        }
+        
+    }
+   
+}
